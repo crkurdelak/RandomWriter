@@ -2,6 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.HashMap;
@@ -12,15 +13,30 @@ import java.util.HashMap;
  * @author ckurdelak20@georgefox.edu
  */
 public class RandomWriter {
+    private static int INVALID_ARGS = 1;
+
     public static void main(String[] args) {
         // TODO implement program
         // TODO update README
         // TODO exit codes
 
         // takes command line arguments int k and int n
-        int k = Integer.parseInt(args[0]);
-        int n = Integer.parseInt(args[1]);
+        int k = 0;
+        int n = 0;
+
+        try {
+            k = Integer.parseInt(args[0]);
+            n = Integer.parseInt(args[1]);
+        }
+        catch (NumberFormatException e) {
+            System.exit(INVALID_ARGS);
+        }
+
         String[] filenames = Arrays.copyOfRange(args, 2, args.length);
+        if (filenames.length == 0) {
+            System.exit(INVALID_ARGS);
+        }
+
         // TODO exit code 1 if missing parameters
 
 
@@ -80,13 +96,14 @@ public class RandomWriter {
                     }
                     ArrayList<Character> possibleNextChars =
                             (ArrayList<Character>) languageModel.get(key);
-                    possibleNextChars.add((char)reader.read());
+                    char newChar = (char) reader.read();
+                    possibleNextChars.add(newChar);
 
-                    currentPrefix = currentPrefix.append((char)reader.read());
+                    currentPrefix = currentPrefix.append(newChar);
                     currentPrefix = currentPrefix.deleteCharAt(0);
                 }
             } catch (FileNotFoundException e) {
-                System.out.println("File not found.");
+                System.exit(INVALID_ARGS);
             } catch (IOException e) {
                 e.printStackTrace();
             }
