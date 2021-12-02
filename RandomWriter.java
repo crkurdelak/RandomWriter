@@ -2,10 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
-import java.text.ParseException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * TODO write summary
@@ -37,35 +34,9 @@ public class RandomWriter {
             System.exit(INVALID_ARGS);
         }
 
-        // TODO exit code 1 if missing parameters
-
-
         HashMap<String, ArrayList<Character>> languageModel = buildLanguageModel(filenames, k);
 
-        System.out.println("hello.");
-        // feed two .txt files
-        // prefix length = k
-        // build language model
-        // each length-k prefix corresponds to an arraylist of all characters that appear
-        // immediately after it
-
-        // use language model to generate n characters of text:
-        // randomly choose key from language model
-        // output key
-        // given current key:
-        //      prefix = prefix[1:] + value
-        //      look up key --> value in language model
-        //      given value (possible next chars for key)
-        //          randomly choose a value
-        //          output value
-
-        // choose initial prefix at random
-        // look up entry in map
-        // choose at random one element from the array and print it, for up to n characters
-        // update prefix by dropping 0th character and appending generated output character
-        // repeat until n characters have been generated
-
-        // print to System.Out
+        System.out.println(generateText(languageModel, n));
     }
 
 
@@ -110,6 +81,47 @@ public class RandomWriter {
         }
 
         return languageModel;
+    }
+
+
+    /**
+     * Procedurally generates text based on a language model.
+     *
+     * @param languageModel the language model
+     * @param n the number of characters to generate
+     * @return the generated text
+     */
+    public static String generateText(HashMap<String, ArrayList<Character>> languageModel, int n) {
+        StringBuilder output = new StringBuilder();
+        StringBuilder currentPrefix = new StringBuilder();
+
+        // get list of all keys
+        List<String> keyList = new ArrayList<String>(languageModel.keySet());
+        // random number generator
+        Random rng = new Random();
+        // select random key
+        // TODO fix bracket problem
+        currentPrefix.append(languageModel.get(keyList.get(rng.nextInt(keyList.size()))));
+
+        // while output.size() < n
+        while (output.length() < n) {
+            // output currentKey
+            String key = currentPrefix.toString();
+            output.append(key);
+            // output a random char from its corresponding values list
+            if (languageModel.containsKey(key)) {
+                char newChar = languageModel.get(key).get(rng.nextInt());
+                output.append(newChar);
+                // append that char to currentKey and remove the first character of currentKey
+                currentPrefix.append(newChar);
+                currentPrefix.deleteCharAt(0);
+            }
+            else {
+                System.exit(2); // TODO find out correct thing to do here
+            }
+        }
+
+        return output.toString();
     }
 }
 
