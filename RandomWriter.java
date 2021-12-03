@@ -5,12 +5,16 @@ import java.io.IOException;
 import java.util.*;
 
 /**
- * TODO write summary
+ * Procedurally generates text based on one or more text files.
+ *
+ * Exits with code 0 on success, 1 if insufficient or invalid arguments are provided, or 2 if the
+ * input text file(s) do not contain sufficient characters to satisfy k or n.
  *
  * @author ckurdelak20@georgefox.edu
  */
 public class RandomWriter {
     private static int INVALID_ARGS = 1;
+    private static int INSUFFICIENT_CHARACTERS = 2;
 
     public static void main(String[] args) {
         // TODO implement program
@@ -97,27 +101,31 @@ public class RandomWriter {
 
         // get list of all keys
         List<String> keyList = new ArrayList<String>(languageModel.keySet());
+        if (keyList.size() < n) {
+            System.exit(INSUFFICIENT_CHARACTERS);
+        }
         // random number generator
         Random rng = new Random();
         // select random key
-        // TODO fix bracket problem
-        currentPrefix.append(languageModel.get(keyList.get(rng.nextInt(keyList.size()))));
+        String firstKey = keyList.get(rng.nextInt(keyList.size()));
+        currentPrefix.append(firstKey);
+        output.append(currentPrefix.toString());
 
         // while output.size() < n
         while (output.length() < n) {
             // output currentKey
             String key = currentPrefix.toString();
-            output.append(key);
             // output a random char from its corresponding values list
             if (languageModel.containsKey(key)) {
-                char newChar = languageModel.get(key).get(rng.nextInt());
+                ArrayList<Character> valueList = languageModel.get(key);
+                char newChar = valueList.get(rng.nextInt(valueList.size()));
                 output.append(newChar);
                 // append that char to currentKey and remove the first character of currentKey
                 currentPrefix.append(newChar);
                 currentPrefix.deleteCharAt(0);
             }
             else {
-                System.exit(2); // TODO find out correct thing to do here
+                System.exit(INSUFFICIENT_CHARACTERS); // TODO find out correct thing to do here
             }
         }
 

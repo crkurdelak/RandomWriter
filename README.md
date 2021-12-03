@@ -1,23 +1,59 @@
 # RandomWriter
 
-Include one or more samples of potentially-humorous output using the following example as a guide.
-Do not include this sample in your submission; it is purely an example of correct Markdown syntax.
-
 
 ## Sample 1
 
 ### Source texts
 
-* `knuth.txt`: Excerpt from Donald Knuth's "The Art of Computer Programming"
-* `chicken.txt`: Boiled chicken recipe
+* `beemovie.txt`: The script of the Bee Movie
 
 ### Parameters
 
-* `k = 7`
-* `n = 1000`
+* `k = 10`
+* `n = 200`
 
 ### Output
 
 ```
-rking with a knowledge of college algebra and the best ever chicken pieces creates tender chicken or bonein if you are hoping to boil chicken perfection we shall investigations mathematically oriented reader with the method for boiled chicken is very shaky foundation of some finite summations mathematical derivations such a degrees the recipe needed cooked and placed in an elementary calculations and techniques involved in the analysis of algorithm and to analyzing the performance characteristics of an algorithms we will discuss are added on top on the size of the notation to name the performance of effective algorithm can be carried out with a knowledge of elementary manner if possibilities of finite numbers or with the solutions to be less than one eighth teaspoon and salads the meanings of the flavor has been extracted boiled chicken whether or not an algorithms usually have a delicious homemade broth not only a finite number of steps but a very simple a whole thing is simmer in boi
+this? Bears kill bees! How'd you get? Picking crud out. Stellar! Wow! Oouple of Hive Harrys. Let's have fun with them. It must be dangerous being a Pollen Jocks! Wow. I've never shut down. Shut down? 
+```
+
+## Sample 2
+
+### Source texts
+
+* `pof.txt`: The script of "Putting Others First: Selfishness v. Selflessness Redux," an episode of
+  the YouTube series Sanders Sides
+
+### Parameters
+
+* `k = 5`
+* `n = 200`
+* `text: pof.txt`
+
+### Output
+
+```
+put good in turn to video games or is it?  Who pushy. That we both have to say, primary feature means is: I know… Patton… What Patton. You could do good  I-- Oh and now what’s confused... Patton’s de
+```
+
+
+## Sample 3
+
+### Source texts
+
+* `pof.txt`: The script of "Putting Others First: Selfishness v. Selflessness Redux," an episode of
+  the YouTube series Sanders Sides
+
+### Parameters
+
+* `k = 10`
+* `n = 1000`
+* `text: pof.txt`
+
+### Output
+
+```
+ack into Selfish City? You mean a 180? Don’t you talk to me about math. You’re not at all excited for them…? With so much eff-use thrown about, I doubt there’s much he’d like him to be if he doesn’t sacrifice-- Do not try to flatter me, snake. I don’t want Thomas to attend the wedding, which didn’t feel good if I do something… That, um I-I dunno if that’s your time and you do what you would say… putting more good into the world... you shouldn't bear it. So I said to make you any less worthy of love. Janus. I’ll take care of himself. Nearly every answer Patton has given to the moral questions can do more harm than good. So, I'm sorry… again… It’s okay, Patton. I'm sure you'd have us think that that time will never come! And even if it does, what's to stop you from telling us that we've done enough good for your help. You’re wrong! So if it was between Thomas’ relationship with intrusive thoughts-- and they asked you if you could say… And no one wanted you to go more than you want-- or e
+
 ```
