@@ -101,9 +101,6 @@ public class RandomWriter {
 
         // get list of all keys
         List<String> keyList = new ArrayList<String>(languageModel.keySet());
-        if (keyList.size() < n) {
-            System.exit(INSUFFICIENT_CHARACTERS);
-        }
         // random number generator
         Random rng = new Random();
         // select random key
