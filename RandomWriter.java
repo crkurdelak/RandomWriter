@@ -14,7 +14,7 @@ import java.util.*;
  */
 public class RandomWriter {
     private static int INVALID_ARGS = 1;
-    private static int INSUFFICIENT_CHARACTERS = 2;
+    private static int DEAD_END = 2;
 
     public static void main(String[] args) {
         // TODO implement program
@@ -40,7 +40,7 @@ public class RandomWriter {
 
         HashMap<String, ArrayList<Character>> languageModel = buildLanguageModel(filenames, k);
 
-        System.out.println(generateText(languageModel, n));
+        generateText(languageModel, k, n);
     }
 
 
@@ -92,12 +92,13 @@ public class RandomWriter {
      * Procedurally generates text based on a language model.
      *
      * @param languageModel the language model
+     * @param k the prefix length
      * @param n the number of characters to generate
-     * @return the generated text
      */
-    public static String generateText(HashMap<String, ArrayList<Character>> languageModel, int n) {
-        StringBuilder output = new StringBuilder();
+    public static void generateText(HashMap<String, ArrayList<Character>> languageModel,
+                                    int k, int n) {
         StringBuilder currentPrefix = new StringBuilder();
+        int charCount = 0;
 
         // get list of all keys
         List<String> keyList = new ArrayList<String>(languageModel.keySet());
@@ -106,27 +107,27 @@ public class RandomWriter {
         // select random key
         String firstKey = keyList.get(rng.nextInt(keyList.size()));
         currentPrefix.append(firstKey);
-        output.append(currentPrefix.toString());
+        System.out.print(currentPrefix.toString());
+        charCount += k;
 
         // while output.size() < n
-        while (output.length() < n) {
+        while (charCount < n) {
             // output currentKey
             String key = currentPrefix.toString();
             // output a random char from its corresponding values list
             if (languageModel.containsKey(key)) {
                 ArrayList<Character> valueList = languageModel.get(key);
                 char newChar = valueList.get(rng.nextInt(valueList.size()));
-                output.append(newChar);
+                System.out.print(newChar);
+                charCount++;
                 // append that char to currentKey and remove the first character of currentKey
                 currentPrefix.append(newChar);
                 currentPrefix.deleteCharAt(0);
             }
             else {
-                System.exit(INSUFFICIENT_CHARACTERS); // TODO find out correct thing to do here
+                System.exit(DEAD_END);
             }
         }
-
-        return output.toString();
     }
 }
 
