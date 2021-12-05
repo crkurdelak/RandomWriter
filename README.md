@@ -29,7 +29,6 @@ this? Bears kill bees! How'd you get? Picking crud out. Stellar! Wow! Oouple of 
 
 * `k = 5`
 * `n = 200`
-* `text: pof.txt`
 
 ### Output
 
@@ -49,7 +48,6 @@ put good in turn to video games or is it?  Who pushy. That we both have to say, 
 
 * `k = 10`
 * `n = 1000`
-* `text: pof.txt`
 
 ### Output
 
@@ -70,7 +68,6 @@ ack into Selfish City? You mean a 180? Don’t you talk to me about math. You’
 
 * `k = 5`
 * `n = 1000`
-* `text: pof.txt`
 
 ### Output
 
@@ -93,9 +90,8 @@ ho’s there. Ooh, the understanding today's discussions throwback. That’s the
 ### Output
 
 ```
-
 Pasadena? To be able Judge Bumbleton presented to starting. I could it. Land off! I'm not sure hear some kind of honey in a big deal. I guess. "Mama, Dad, there, a piece office. Right. Pollen to me! We makes it? I can actually hurt. Mamma mia, that fuzz. I heart. I knew I heard you so much honey? Barry, I thinking in a huge engines. We eat crazy. Thank you, drain advisory to leaving rightjob. We invented turn. Hold it be? Wait. Oh, my. Oome on. Two left. I pick out of barricade. What is ready a bears and back. Ooh, blacktop. We are? We have a terrification. But you're quite an amusement, they like that visual. Welcome it. I know. Hello? Benson, it's not dating flowers are obviously doctor, but I gotta do are flabbergasted, box boy! I knew you look dead. Three cups, and flowers and I will here? Of court of a piece of the mattery. I'm not over. Don't believe Mr. Liotta, please hurry! What woman? Sure is. Who's an all the bees. Not on your possible. No, you've taking a bit of it! Wow! Tha```
-
+```
 
 
 ## Sample 5
@@ -121,7 +117,7 @@ omewhere it out. He fine. Why does he thank you knows, stir it arounded by a wat
 ### Source texts
 
 * `beemovie.txt`: The script of the Bee Movie
-* * `pof.txt`: The script of "Putting Others First: Selfishness v. Selflessness Redux," an episode of
+* `pof.txt`: The script of "Putting Others First: Selfishness v. Selflessness Redux," an episode of
     the YouTube series Sanders Sides
 
 ### Parameters
@@ -141,7 +137,7 @@ up for that time, take a good. Tap it. Well, the reward-winning society of livin
 ### Source texts
 
 * `beemovie.txt`: The script of the Bee Movie
-* * `pof.txt`: The script of "Putting Others First: Selfishness v. Selflessness Redux," an episode of
+* `pof.txt`: The script of "Putting Others First: Selfishness v. Selflessness Redux," an episode of
     the YouTube series Sanders Sides
 
 ### Parameters
@@ -153,4 +149,123 @@ up for that time, take a good. Tap it. Well, the reward-winning society of livin
 
 ```
 call comes! Speak, you wanted to be gonna sandwiches to get him sue these are pinheads! Pinhead. They know, Patton. You are funeral? No, it’s Frogger fund. You can't need to pincushion that one intended for stealing! I think they’re missing that? I...I means is: what I'd be a little. Sounds like we’re gone to another… He didn’t sayin’ that effort to be put him up. Don’t know. Leslie’s faux-flexible to visualize? Is he that’s faux-flexible we giving parasite. All right not plane is pushy is no vi
+```
+
+
+## Sample 8
+
+### Source texts
+
+* `muffet.txt`: All the lines spoken by Muffet from the video game Undertale, along with text 
+from her boss battle and from the Spider Bake Sale
+
+### Parameters
+
+* `k = 10`
+* `n = 1000`
+
+### Output
+
+```
+de by spider clans can come through. I heard... ...a certain stingy human in a striped shirt~ Sorry for our pastries, don't be silly~ You can finally be reunited~ You're saying that... Is exactly what they said? They're a total spiders claps her mouth and claps her parlor, excuse you again! Ahuhuhuhu~ You think purple is a better look so blue, my pet~ Looks like to go~ ... Ahuhuhuhu~ You're saying that they're saying that they hated spider fanatic! Oh my, this next batch needs! I heard? Spiders have been trapped in them what they love to go~ Feeling comfortable alone. But enough of that they love to escape the shadows... Changing shape...? Oh, my pet~ It's strange purple is too refined for all be able along to make it up to you~ You think your taste is too refined for dinner, isn't it? Oh, it's time for that money. Ahuhuhu... I'll SPARE you a cup of spiders! Ahuhuhu... Did you again! Ahuhuhu... That web? Ahuhuhu~ I'll SPARE you to make it's time, isn't it? Oh, it's time for no charge a
+```
+
+
+## Sample 9
+
+### Source texts
+
+* `spiderpedia.txt`: An excerpt from the Wikipedia article on spiders
+
+### Parameters
+
+* `k = 10`
+* `n = 1000`
+
+### Output
+
+```
+s, strength and joined by flooding common symbols in total species is dangerous in 129 families should be classified into mammals appears ago, but the Mesothelae. Their food-sharing. Although a few larger, male spiratory organisms. Spiders have been found or by sharing food by the genus Portia show signs of the largest order, the most primitive hunters have acute vision, or abdomen, as to co-operations of a few large species diversity as there exists an argument against these anywhere is called arachnids) differ from 318 to 25 years ago. The main group, the large species survive a few matings, limited mainly by their food-sharing food with silk-produce tangled cobwebs that extrude silk factories. As of spider venom of an argument against use animals and have antennae. In all other arthropods, spiders contain hundreds of most two tagmata, the opisthosoma of an abdomens bear appendages that the over 20 differ from a few matings, limited mainly by sharing food within their food-sharing. A
+```
+
+
+## Sample 10
+
+### Source texts
+
+* `pastrypedia.txt`: An excerpt from the Wikipedia article on pastries
+
+### Parameters
+
+* `k = 10`
+* `n = 1000`
+
+### Output
+
+```
+tributes to support the crust pastry to be piped in many layers of pastisserie is a simplest and flour granules are called and flour thoroughly before adding it the ability to expanding it the pastry is filling of the boil, and most common pastry has many liquid. This can also used for making out a dough that the flour, sugar and rather way, though cabbage-like layers that is made from the fat contributes to steam in the flour, fat, butter, and used in the dough. Eggs are made by beaten into the water. This meaning (solidifying the pastries. The usual ingredients are called with butter before being cooked which are made by having a dish or by kneading a shortcrust pastisserie referred to the other than water, melts, the weight and pastisserie referred to further than water, melts, the butter or lard) that may be sagging during the pastry. In other until the dough that the oven light, hollow pastry is made by heating the oven to be used for baked products many kinds of flour gelatinizes
+```
+
+
+## Sample 11
+
+### Source texts
+
+* `muffet.txt`: All the lines spoken by Muffet from the video game Undertale, along with text
+  from her boss battle and from the Spider Bake Sale
+* `spiderpedia.txt`: An excerpt from the Wikipedia article on spiders
+* `pastrypedia.txt`: An excerpt from the Wikipedia article on pastries
+
+### Parameters
+
+* `k = 10`
+* `n = 1000`
+
+### Output
+
+```
+tly lacked spinner, isn't it? And I forgot to inject venom, and is obtained by the larger, male spider clans can be used into stomp on the genus Portia short life spans. Females, which flour, fat, most primitive groups of pastry. Flaky or sweetened pastry, care must have eight and opisthosoma, or by kneading of fat, mostly prey: trapped around worldwide range of water pâte sucrée, in which in the pastry dough a few to 50,000 individuals. Males weaver spiders. The "puff" when baked. Puff pastisserie referred to anything, cream and spinner mouth and cream. Unlike layers of most two year. Spider silk from bread by a small, cylindrical evidence in it they said a human hated types of prey mainly by rubbing water to the pastry. Once the RUINS? What? They must be true, can be used for savoury or shortening, of spiders use of strands when baked products are now appendages that can be for generally able to that... I'll make a delicate and let that can't be true, can also grind food by taxonomis
+```
+
+
+## Sample 12
+
+### Source texts
+
+* `muffet.txt`: All the lines spoken by Muffet from the video game Undertale, along with text
+  from her boss battle and from the Spider Bake Sale
+* `spiderpedia.txt`: An excerpt from the Wikipedia article on spiders
+* `pastrypedia.txt`: An excerpt from the Wikipedia article on pastries
+
+### Parameters
+
+* `k = 10`
+* `n = 1000`
+
+### Output
+
+```
+1, 49,623 spiders! Ahuhuhuhuhu~ You're awfully stingy within the accepted as non-polluting the large species care must be take solids, so the proud~ Proud that they hate spiders. Common symbols in art and flour, thereby solids, so the spiratory organs, scientists and have been inserted in the mainly by themselves to potentiated so much large at all their legs off. However, the crust cools, its shape...? Oh, my pet~ Muffet trapped arachnids) differentiated spinner mould. As of pastry dough by their legs off. I heard that... It's time food by then the shape and diversity among all the water in the French choux, meaning (solid fats, include pies, don't be taken to be piped in that the éclair and rolled around or by kneading a strands that crustaceans fused as her mouth and is often described as baked produce tangled cobwebs that can't be true, can also know how rude of baked cobwebs are air-breathing, of spiders, Mygalomorphae, first, generally by sensing various come crisp. The person wh
+```
+
+
+## Sample 13
+
+### Source texts
+
+* `muffet.txt`: All the lines spoken by Muffet from the video game Undertale, along with text
+  from her boss battle and from the Spider Bake Sale
+* `spiderpedia.txt`: An excerpt from the Wikipedia article on spiders
+* `pastrypedia.txt`: An excerpt from the Wikipedia article on pastries
+
+### Parameters
+
+* `k = 7`
+* `n = 500`
+
+### Output
+
+```
+ry to expands when cooked which is generally by rubbing with fangs generally accepted as the opisthosoma of all arachnids with silk-producing spigots appeared in the heat of their legs off. I heard that the spiders. Spider Bake Sale All proceeds go to real spiders are found in Carboniferous rocks from 318 to 299 million years ago, and are very delicate and flaky. Hot water and shortening (solid fats, include pies, tarts, quiches, croissants, the choux dough (paste, later pâte) and not typically 
+
 ```
